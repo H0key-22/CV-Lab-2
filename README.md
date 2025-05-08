@@ -1,4 +1,4 @@
-# Transfer Learning Benchmarks: ResNet & R-CNN
+# Transfer Learning Practice: ResNet & R-CNN
 
 This repository contains code and configuration files to reproduce fine-tuning experiments on Caltech-101 classification (ResNet-18) and Pascal VOC object detection/segmentation (Mask R-CNN & Sparse R-CNN) using MMDetection.
 
@@ -121,4 +121,6 @@ python tools/test.py \
 - **Mask R-CNN**: bbox mAP ≈ 45 %, segm mAP ≈ 45 % (see `work_dirs/voc_mask_rcnn_r50_fpn/`).
 - **Sparse R-CNN**: bbox mAP ≈ 70 %, (see `work_dirs/voc_sparse_rcnn_r50_fpn/`).
 
-Model Checkpoints can be downloaded at 
+## Checkpoints
+
+Model Checkpoints can be downloaded at https://drive.google.com/drive/folders/1xzAAHd5RznnsV8IO3EO2dn91BzQ40yA3?usp=drive_link

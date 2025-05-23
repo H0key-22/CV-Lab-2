@@ -117,9 +117,9 @@ python tools/test.py \
 
 ## Results & Logs
 
-- **ResNet-18**: best test accuracy ~87.3 % (see `Resnet/runs/caltech101/`).
-- **Mask R-CNN**: bbox mAP ≈ 45 %, segm mAP ≈ 45 % (see `work_dirs/voc_mask_rcnn_r50_fpn/`).
-- **Sparse R-CNN**: bbox mAP ≈ 70 %, (see `work_dirs/voc_sparse_rcnn_r50_fpn/`).
+- **ResNet-18**: best test accuracy ~87.3 % .
+- **Mask R-CNN**: bbox mAP ≈ 45 %, segm mAP ≈ 45 % .
+- **Sparse R-CNN**: bbox mAP ≈ 70 % .
 
 ## Checkpoints
 

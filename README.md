@@ -7,27 +7,51 @@ This repository contains code and configuration files to reproduce fine-tuning e
 ## Repository Structure
 
 ```
-├─ mmdetection
-│  ├─ configs
-│  │   ├─ Mask_RCNN
-│  │   │   └─ voc_mask_rcnn_r50_fpn.py
-│  │   ├─ Sparse_RCNN
-│  │   │   └─ voc_sparse_rcnn_r50_fpn.py
-│  │   └─ _base_ (common configs)
-│  └─ work_dirs
-│      ├─ voc_mask_rcnn_r50_fpn/
-│      └─ voc_sparse_rcnn_r50_fpn/
-└─ Resnet
-    ├─ data
-    │   └─ caltech-101/
-    │       ├─ 101_ObjectCategories/
-    │       └─ Annotations/
-    ├─ runs
-    │   └─ caltech101/       ← TensorBoard logs & checkpoints
-    └─ splits/
-        ├─ train.txt
-        ├─ val.txt
-        └─ test.txt
+|   README.md
+|
++---mmdetection
+|   |   Mask-RCNN.ipynb
+|   |   Sparse-RCNN.ipynb
+|   |
+|   +---configs
+|   |       coco_instance.py
+|   |       schedule_1x.py
+|   |       voc0712.py
+|   |       voc_instance.py
+|   |       voc_mask_rcnn_r50_fpn.py
+|   |       voc_sparse_rcnn_r50_fpn.py
+|   |
+|   +---Mask_RCNN
+|   |
+|   +---Sparse_RCNN
+|   |
+|   \---work_dirs
+|       +---voc_mask_rcnn_r50_fpn
+|       |
+|       \---voc_sparse_rcnn_r50_fpn
+|
+\---Resnet
+    |   config.py
+    |   dataset.py
+    |   data_split.py
+    |   model.py
+    |   Resnet Finetune.md
+    |   test.py
+    |   train.py
+    |   train_resnet_compare.py
+    |
+    +---checkpoints
+    +---data
+    |   \---caltech-101
+    |       +---101_ObjectCategories
+    |       \---Annotations
+    +---runs
+    |   \---caltech101
+    |           
+    |
+    \---splits
+            splits.json
+    
 ```
 
 ------
